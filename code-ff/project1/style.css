@@ -7,19 +7,27 @@ body {
   background-color: white;
   text-align: center;
   padding: 20px;
+  
 }
-
-.squares {
+.grid {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+}
+.squares {
+  display: grid;
+  height: 300px;
 }
 
 .square {
   width: 350px;
   height: 350px;
   background-color: red; /* which color do you like ? */
+  margin: 20px
+}
+
+.square:nth-child(4) {
+  grid-column: 2;
 }
 
