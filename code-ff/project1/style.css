@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding; 0:
+  padding: 0;
  }
 
 .container {
@@ -17,7 +17,7 @@ body {
   gap: 20px;
 }
 
-.sqaure {
+.square {
   width: 350px;
   height: 350px;
   background-color: red; /* which color do you like ? */
