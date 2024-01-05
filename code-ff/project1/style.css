@@ -1,1 +1,25 @@
+body {
+  margin: 0;
+  padding; 0:
+ }
+
+.container {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.squares {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sqaure {
+  width: 350px;
+  height: 350px;
+  background-color: red; /* which color do you like ? */
+}
 
