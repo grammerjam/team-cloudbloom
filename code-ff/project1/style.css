@@ -1,25 +1,33 @@
 body {
   margin: 0;
   padding: 0;
- }
+}
 
 .container {
   background-color: white;
   text-align: center;
   padding: 20px;
-  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 .grid {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .squares {
   display: grid;
   height: 300px;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  margin-top: auto;
+}
+
+.date-time {
+  margin: -30px auto;
 }
 
 .square {
@@ -33,7 +41,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .squares{
+  .squares {
     display: flex;
     flex-direction: column;
   }
@@ -41,4 +49,3 @@ body {
     padding-bottom: 100%;
   }
 }
-
