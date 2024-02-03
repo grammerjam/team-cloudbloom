@@ -12,3 +12,21 @@
     justify-content: center;
     height: 100vh;
 }
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px; 
+}
+
+input {
+    border-radius: 7px;
+    border: 2px solid gray;
+    height: 35px;
+    padding: 0 13px 0 13px;
+}
+
+label {
+    padding-bottom: 5px;
+    font-size: 15px;
+}
