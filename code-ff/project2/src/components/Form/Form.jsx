@@ -9,11 +9,11 @@ export default function Form(name, card_number, exp_date, cvc) {
                     <form action="">
                         <div className="form-input">
                             <label for="name">CARDHOLDER NAME</label>
-                            <input type="text" name="name" id="" placeholder="e.g. Jane Appleseed" required />
+                            <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed" required />
                         </div>
                         <div className="form-input">
                             <label for="number">CARDHOLDER NUMBER</label>
-                            <input type="text" name="number" id="" placeholder="e.g. 1234 4678 9123 0000" required />
+                            <input type="text" name="number" id="number" placeholder="e.g. 1234 4678 9123 0000" required />
                         </div>
                         <div className="date-cvc">
                             <div className="exp-date form-input">
@@ -25,9 +25,10 @@ export default function Form(name, card_number, exp_date, cvc) {
                             </div>
                             <div className="form-input cvc">
                                 <label for="cvc">CVC</label>
-                                <input type="number" name="" id="cvc" placeholder="e.g. 123" required />
+                                <input type="number" name="cvc" id="cvc" placeholder="e.g. 123" required />
                             </div>
                         </div>
+                        <button> Confirm </button>
                         
                     </form>
                 </div>
