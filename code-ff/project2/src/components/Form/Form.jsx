@@ -15,15 +15,20 @@ export default function Form(name, card_number, exp_date, cvc) {
                             <label for="number">CARDHOLDER NUMBER</label>
                             <input type="text" name="number" id="" placeholder="e.g. 1234 4678 9123 0000" required />
                         </div>
-                        <div className="form-input">
-                            <label for="exp-date">EXP. DATE (MM/YY)</label>
-                            <input type="text" name="exp-date-month" id="exp-date-month" placeholder="MM" required />
-                            <input type="text" name="exp-date-year" id="exp-date-year" placeholder="YY" required />
+                        <div className="date-cvc">
+                            <div className="exp-date form-input">
+                                <label for="exp-date">EXP. DATE (MM/YY)</label>
+                                <div className="date">
+                                    <input type="number" name="exp-date-month" id="exp-date-month" placeholder="MM" required />
+                                    <input type="number" name="exp-date-year" id="exp-date-year" placeholder="YY" required />
+                                </div>
+                            </div>
+                            <div className="form-input cvc">
+                                <label for="cvc">CVC</label>
+                                <input type="number" name="" id="cvc" placeholder="e.g. 123" required />
+                            </div>
                         </div>
-                        <div className="form-input">
-                            <label for="cvc">CVC</label>
-                            <input type="text" name="" id="" placeholder="e.g. 123" required />
-                        </div>
+                        
                     </form>
                 </div>
             </div>
