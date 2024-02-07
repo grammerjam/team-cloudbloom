@@ -1,5 +1,5 @@
 import "./Form.css"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export default function Form() {
 
@@ -10,6 +10,22 @@ export default function Form() {
         expDateYear: '',
         cvc: ''
     })
+
+    const [confirmed, setConfirmed] = useState(false)
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        setConfirmed(true)
+    }
+
+    useEffect(() => {
+
+        console.log(confirmed)
+
+        if (confirmed) {
+            alert("you gave me your card info >:)")
+        }
+    }, [confirmed])
 
     const handleInputChange = (e) => {
         const { name,  value } = e.target
@@ -25,12 +41,11 @@ export default function Form() {
             <div>
                 <p>{formData.name}</p>
                 <p>{formData.cardNumber}</p>
-                <p>{formData.expDateMonth}</p>
-                <p>{formData.expDateYear}</p>
+                <p>{formData.expDateMonth}/{formData.expDateYear}</p>
                 <p>{formData.cvc}</p>
             </div>
                 <div className="form">
-                    <form action="">
+                    <form onSubmit={handleSubmit}>
                         <div className="form-input">
                             <label for="name">CARDHOLDER NAME</label>
                             <input type="text" name="name" id="name" value={formData.name} onChange={handleInputChange} placeholder="e.g. Jane Appleseed" required />
@@ -52,7 +67,7 @@ export default function Form() {
                                 <input type="text" name="cvc" id="cvc" value={formData.cvc} onChange={handleInputChange} placeholder="e.g. 123" maxLength={3} required />
                             </div>
                         </div>
-                        <button> Confirm </button>
+                        <button type="submit" > Confirm </button>
                     </form>
                 </div>
             </div>
