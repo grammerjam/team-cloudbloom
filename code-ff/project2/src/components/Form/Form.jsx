@@ -38,12 +38,12 @@ export default function Form() {
     return(
         <>
             <div className="form-container">
-            <div>
-                <p>{formData.name}</p>
-                <p>{formData.cardNumber}</p>
-                <p>{formData.expDateMonth}/{formData.expDateYear}</p>
-                <p>{formData.cvc}</p>
-            </div>
+                <div>
+                    <p>{formData.name}</p>
+                    <p>{formData.cardNumber}</p>
+                    <p>{formData.expDateMonth}/{formData.expDateYear}</p>
+                    <p>{formData.cvc}</p>
+                </div>
                 <div className="form">
                     <form onSubmit={handleSubmit}>
                         <div className="form-input">
