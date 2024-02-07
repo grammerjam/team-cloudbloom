@@ -1,4 +1,7 @@
-body{
-    background-image: url("../../../images/bg-main-desktop.png");
-    background-repeat: no-repeat;
+.home-page{
+    display: flex;
+}
+
+.content{
+    flex: 1;
 }
